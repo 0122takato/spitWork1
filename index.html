@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <link rel="stylesheet" media="screen and (max-width:768px)" href="./css/spStyle.css">
+    <link rel="stylesheet" media="screen and (min-width:769px)" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+    <title>大栄商会</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"　integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 hidden>大栄商会</h1>
+    <div class="firstPage">
+        <header>
+            <nav>
+                <img src="./img/pc/logo.png" alt="ロゴ" class="navImg">
+                
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <ul class="listNone globalMenuSp">
+                    <li><a href="">会社案内</a></li>
+                    <li><a href="">事業内容</a></li>
+                    <li><a href="">商品紹介</a></li>
+                    <li><a href="">採用情報</a></li>
+                    <li><a href=""><img src="./img/pc/mail.png" alt="メール"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="top">
+            <div class="topLeft">
+                <div class="topText fade">
+                    <h2>
+                        確かな技術が生み出す<br>
+                        繊細な職人技
+                    </h2>
+                    <p>
+                        株式会社大栄商会は水着、フィットネスウェアー、インナーなどの<br class="br-disp"/>
+                        受注生産を主体とした縫製会社です。<br>
+                        日本国内の自社工場及び協力工場で一点一点縫製しております。
+                    </p>
+                </div>
+                <div class="topUnder">
+                    <div class="scroll"><span class="fontGray">scroll</span></div>
+                    <ul class="listNone listNum">
+                        <li>
+                            <input id="one" type="radio" name="tabItem" class="tabItem" checked hidden>
+                            <label class="tabItem" for="one" onclick="picChange(0)" id="imgChange1">01</label>
+                        </li>
+                        <li>
+                            <input id="two" type="radio" name="tabItem" class="tabItem" hidden>
+                            <label class="tabItem" for="two" onclick="picChange(1)" id="imgChange2">02</label>
+                        </li>
+                        <li>
+                            <input id="three" type="radio" name="tabItem" class="tabItem" hidden>
+                            <label class="tabItem" for="three" onclick="picChange(2)" id="imgChange3">03</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="topRight" id="sample">
+                <img id="pic" src="./img/pc/sewingMachine.png" alt="ミシン">
+            </div>
+        </section>
+    </div>
+
+    <section class="product">
+        <h2>
+            <span class="fontGray">PRODUCT</span><br>
+            商品紹介
+        </h2>
+        <div class="swiper-parentDiv">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product1.png" alt="キュアコットンシリーズ">
+                        <p>キュアコットンシリーズ</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product2.png" alt="オサンバッドフルーツ">
+                        <p>オサンバッドフルーツ</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product3.png" alt="ママ色母乳パッド">
+                        <p>ママ色母乳パッド</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product4.png" alt="オサンバッドロイヤル">
+                        <p>オサンバッドロイヤル</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product4.png" alt="オサンバッドロイヤル">
+                        <p>オサンバッドロイヤル</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product4.png" alt="オサンバッドロイヤル">
+                        <p>オサンバッドロイヤル</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/pc/product4.png" alt="オサンバッドロイヤル">
+                        <p>オサンバッドロイヤル</p>
+                    </div>
+                    <!-- <div class="swiper-slide">
+                        <img src="./img/pc/product5.png" alt="">
+                    </div> -->
+                </div>
+                <!-- <img src="./img/pc/right.png" alt="右のボタン">
+            <img src="./img/pc/left.png" alt="左のボタン"> -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+            <div class="swiper-button-prev-a"><a href=""></a></div>
+            <div class="swiper-button-next-a"><a href=""></a></div>
+        </div>
+    </section>
+
+    <section class="aboutUs scroll-animation fadeIn">
+        <picture>
+            <source media="(min-width: 769px)" srcset="./img/pc/about.png">
+            <source media="(max-width: 768px)" srcset="./img/sp/manSp.png">
+            <img src="./img/pc/about.png" alt="about usの画像" class="aboutSideImg">
+        </picture>
+        <div class="aboutText">
+            <h2>
+                <span class="fontGray">ABOUT US</span><br>
+                私たちについて
+            </h2>
+            <h3>
+                確かな技術が生み出す<br>
+                繊細な職人技
+            </h3>
+            <p>日本国内の自社工場及び協力工場で一点一点縫製しております。</p>
+            <p>
+                昭和60年の代より、アパレル会社の多岐にわたるニーズに応えるため、国内生産に<br class="br-disp"/>
+                加えて海外生産も手がけ、多種多様な縫製品の製造・輸入を行なっています。<br>
+                特に一般スポーツ衣料に加えて医療用繊維製品の分野でも手術室で使用される<br class="br-disp"/>
+                高度医療用品や妊産婦の手助けをするマタニティ用品の製造を行い、国内市場に<br class="br-disp"/>
+                加えて台湾市場でも好評を得ています。
+            </p>
+            <p>
+                平成に入ってからも抗アレルギー剤や除菌剤などの生活環境改善用品の取り扱い<br class="br-disp"/>
+                も初め、令和の時代に向けて社会に貢献する企業を目指しています。
+            </p>
+            <a href=""><img src="./img/pc/aboutBtn.png" alt="会社案内はこちら"></a>
+        </div>
+    </section>
+
+    <section class="business">
+        <div class="businessTop scroll-animation fadeIn">
+            <h2>
+                <span class="fontGray">BUSINESS</span><br>
+                事業内容
+            </h2>
+            <p>大栄商会の事業内容をそれぞれご紹介します。</p>
+        </div>
+        <ol class="businessList">
+            <li class="businessDetail business1">
+                <div class="businessDetailBox businessDetailBoxLeft scroll-animation fadeIn-left">
+                    <div class="businessDetailTitle">
+                        <h3><span class="fontGray businessGray">BUSINESS - 01</span><br>国内縫製事業</h3>
+                        <a href="">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="./img/pc/btn.png">
+                                <source media="(max-width: 768px)" srcset="./img/sp/businessBtnSp.png">
+                                <img src="./img/pc/btn.png" alt="詳細はこちら">
+                            </picture>
+                        </a>
+                    </div>
+                    <p>フィットネス水着をはじめ下着やダンス、格闘技用のウェアなどを少数から受注生産しています。</p>
+                </div>
+            </li>
+            <li class="businessDetail business2">
+                <div class="businessDetailBox businessDetailBoxRight scroll-animation fadeIn-right">
+                    <div class="businessDetailTitle">
+                        <h3><span class="fontGray businessGray">BUSINESS - 02</span><br>医療関連商品</h3>
+                        <a href="">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="./img/pc/btn.png">
+                                <source media="(max-width: 768px)" srcset="./img/sp/businessBtnSp.png">
+                                <img src="./img/pc/btn.png" alt="詳細はこちら">
+                            </picture>
+                        </a>
+                    </div>
+                    <p>医療用消耗品の製造を除く企画から輸入までの業務プロセスを一貫して自社で行なっています。</p>
+                </div>
+            </li>
+            <li class="businessDetail business3">
+                <div class="businessDetailBox businessDetailBoxLeft scroll-animation fadeIn-left">
+                    <div class="businessDetailTitle">
+                        <h3><span class="fontGray businessGray">BUSINESS - 03</span><br>海外輸出<br>生活雑貨品全般の<br class="br-dipc"/>御販売</h3>
+                        <a href="">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="./img/pc/btn.png">
+                                <source media="(max-width: 768px)" srcset="./img/sp/businessBtnSp.png">
+                                <img src="./img/pc/btn.png" alt="詳細はこちら">
+                            </picture>
+                        </a>
+                    </div>
+                    <p>生活雑貨全般の輸出を中心に、数多くの国へ日本の流行をスピーディに且つ安全にお届けするビジネスを展開しています。</p>
+                </div>
+            </li>
+            <li class="businessDetail business4">
+                <div class="businessDetailBox businessDetailBoxRight scroll-animation fadeIn-right">
+                    <div class="businessDetailTitle">
+                        <h3><span class="fontGray businessGray">BUSINESS - 04</span><br>海外輸入貿易</h3>
+                        <a href="">
+                            <picture>
+                                <source media="(min-width: 769px)" srcset="./img/pc/btn.png">
+                                <source media="(max-width: 768px)" srcset="./img/sp/businessBtnSp.png">
+                                <img src="./img/pc/btn.png" alt="詳細はこちら">
+                            </picture>
+                        </a>
+                    </div>
+                    <p>国内の自社工場だけでなく、海外の協力工場にて多種多様な縫製品の生産も手掛けております。</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <section class="recruit">
+        <div class="recruitBox">
+            <h2>
+                <span class="reFont catchLeftRe">RECRUIT</span><br>
+                採用情報
+            </h2>
+            <div class="recruitDetail scroll-animation fadeIn">
+                <p>
+                    有名大手メーカーから高く支持され、OEM事業を中心に安定成長を続ける当社。70年という歴史に甘えることなく、<br class="br-disp"/>
+                    新たなビジネスにも積極的に取り組む元気カンパニーです。<br class="br-disp"/>
+                    向上心をもってどんどんチャレンジしていける方、そんな仲間に出会えることを楽しみにしています。
+                </p>
+                <a href="">
+                    <picture>
+                        <source media="(min-width: 769px)" srcset="./img/pc/recruitBtn.png">
+                        <source media="(max-width: 768px)" srcset="./img/sp/recruitBtnSp.png">
+                        <img src="./img/pc/recruitBtn.png" alt="採用情報はこちらから">
+                    </picture>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="news">
+        <div>
+            <h2>
+                <span class="fontGray"><span class="borderLine">NEWS</span><br></span>
+                お知らせ
+            </h2>
+            <ul>
+                <li class="lineTop"><time datetime="2021-00-00">2021.00.00</time><br class="br-dipc"/><span
+                        class="catchLeft"><br class="br-dipc"/>お知らせ情報が表示されます。お知らせ情報が表示されます。</span></li>
+                <li class="lineBottom"><time datetime="2021-00-00">2021.00.00</time><br class="br-dipc"/><span
+                        class="catchLeft"><br class="br-dipc"/>お知らせ情報が表示されます。お知らせ情報が表示されます。お知らせ情報が表示されます。</span></li>
+                <li class="lineBottom"><time datetime="2021-00-00">2021.00.00</time><br class="br-dipc"/><span
+                        class="catchLeft"><br class="br-dipc"/>お知らせ情報が表示されます。お知らせ情報が表示されます。お知らせ情報が表示されます。</span></li>
+                <li class="lineBottom"><time datetime="2021-00-00">2021.00.00</time><br class="br-dipc"/><span
+                        class="catchLeft"><br class="br-dipc"/>お知らせ情報が表示されます。お知らせ情報が表示されます。</span></li>
+            </ul>
+            <a href="" class="viewMore">
+                <picture>
+                    <source media="(min-width: 769px)" srcset="./img/pc/newsBtn.png">
+                    <source media="(max-width: 768px)" srcset="./img/sp/newsBtnSp.png">
+                    <img src="./img/pc/newsBtn.png" alt="VIEW MORE" class="newsBtn">
+                </picture>
+            </a>
+        </div>
+    </section>
+
+    <div class="pageTop"><a href="#"><i class="fas fa-chevron-up"></i></a></div>
+
+    <footer>
+        <div class="footerDiv">
+            <ul class="footerNav listNone">
+                <!-- <div> -->
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">会社案内</a></li>
+                    <li><a href="">事業内容</a></li>
+                <!-- </div> -->
+                <!-- <div> -->
+                    <li><a href="">商品紹介</a></li>
+                    <li><a href="">採用情報</a></li>
+                    <li><a href="">お問い合わせ</a></li>
+                <!-- </div> -->
+            </ul>
+        </div>
+
+        <div class="footerUnderDiv">
+            <address>
+                <ul class="listNone">
+                    <li>株式会社大栄商会</li>
+                    <li>〒534-0023 大阪府大阪市都島区都島南通1丁目17-1</li>
+                    <li>TEL：06-6922-1446/FAX：06-6926-1822</li>
+                </ul>
+            </address>
+            <div>
+                <ul class="footerUnderNav footerColor listNone">
+                    <li><a href="">お知らせ</a></li>
+                    <li><a href="">プライバシーポリシー</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copy footerColor">
+            <small>© 2021 DAIEI-SHOKAI CO.,LTD.</small>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
