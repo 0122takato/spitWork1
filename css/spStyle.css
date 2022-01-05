@@ -25,7 +25,6 @@ header nav {
     align-items: center;
 }
 
-/*　ハンバーガーボタン　*/
 .hamburger {
     display : block;
     position: absolute;
@@ -38,6 +37,7 @@ header nav {
     text-align: center;
     background-color: #002e5d;
 }
+
 .hamburger span {
     display : block;
     position: absolute;
@@ -48,20 +48,22 @@ header nav {
     -moz-transition   : 0.3s ease-in-out;
     transition        : 0.3s ease-in-out;
 }
+
 .hamburger span:nth-child(1) {
     top: 18px;
     width: 25px;
 }
+
 .hamburger span:nth-child(2) {
     top: 25px;
     width: 15px;
 }
+
 .hamburger span:nth-child(3) {
     top: 32px;
     width: 20px;
 }
 
-/* ナビ開いてる時のボタン */
 .hamburger.active span:nth-child(1) {
     top : 25px;
     left: 12px;
@@ -94,8 +96,8 @@ header nav {
     width: 100%;
     opacity: 0;
     transition: opacity .6s ease, visibility .6s ease;
-    pointer-events:none;/*リンクを非リンクに変える*/
-     cursor:default;/*マウスカーソルを矢印のまま変えない */
+    pointer-events:none;
+    cursor:default;
 }
 
 .globalMenuSp ul {
@@ -110,10 +112,12 @@ header nav {
     width: 100%;
     transition: .4s all;
 }
+
 .globalMenuSp ul li:last-child {
     padding-bottom: 0;
     display: none;
 }
+
 .globalMenuSp ul li:hover{
     background :#ddd;
 }
@@ -132,7 +136,6 @@ header nav ul li a {
     color: #ffffff;
 }
 
-/* このクラスを、jQueryで付与・削除する */
 .globalMenuSp.active {
     opacity: 100;
     pointer-events:painted;
@@ -227,8 +230,8 @@ header nav ul li a {
 }
 
 input:checked + .tabItem {
-    color: #fff;                  /* タブの文字色：赤色 */
-    background-color: #98abbe;   /* タブの背景色：淡い黄色 */
+    color: #fff;
+    background-color: #98abbe;
     border-color: #98abbe;
 }
 
@@ -239,11 +242,11 @@ input:checked + .tabItem {
 .swiper-container {
     width: 100%;
 }
-/* 全体のスタイル */
+
 .swiper-wrapper {
 	width: 100%;
 }
-/* 全スライド共通スタイル */
+
 .swiper-slide {
     text-align: left;
     padding-bottom: 20px;
@@ -266,10 +269,10 @@ input:checked + .tabItem {
     align-items: center;
     justify-content: center;
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    width: 48px; /* ボタンの幅 */
-    height: 48px; /* ボタンの高さ */
-    background-size: 48px 48px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
-    margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-top: -24px;
 }
 
 .swiper-button-prev {
@@ -329,7 +332,6 @@ input:checked + .tabItem {
 .swiper-button-next-a {
     background-image: url(../img/pc/right.png);
     position: absolute;
-    /* top: calc(50% - 25px); */
     left: auto;
     right: 60px;
     width: 50px;
@@ -422,17 +424,12 @@ input:checked + .tabItem {
     padding-top: 100px;
     margin-top: 100px;
     position: bottom;
-    /* padding-bottom: 15%; */
-    /* margin-bottom: 100px; */
-    /* display: flex;
-    align-items: flex-end; */
 }
 
 .businessDetailBox {
     background-color: #ffffff;
     margin-left: 5.33%;
     margin-right: 5.33%;
-    /* margin-bottom: 20px; */
     margin-top: 100px;
     padding-left: 10px;
     padding-right: 10px;
@@ -594,10 +591,6 @@ input:checked + .tabItem {
     width: 150px;
 }
 
-/* .news a img {
-    width: 120px;
-} */
-
 .news div ul li {
     font-size: 12.5px;
 }
@@ -617,7 +610,6 @@ input:checked + .tabItem {
     left:-80px;
 }
 
-/* ページTOPに戻る */
 .pageTop{
     text-align: right;
     margin-bottom: 40px;
@@ -709,14 +701,17 @@ footer {
     font-size: 10px;
 }
 
-/* アニメーションの記述 */
-
 .fade {
     animation: fadeIn 1s ease 0s 1 normal;
 }
-@keyframes fadeIn { /*animation-nameで設定した値を書く*/
-    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
-    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 .fadeIn{

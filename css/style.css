@@ -10,7 +10,6 @@ body {
     display: none;
 }
 
-
 h2,h3 {
 	font-family: serif;
 }
@@ -104,38 +103,30 @@ header nav ul li a {
     margin-right: 60px;
 }
 
-/*Scrollテキストの描写*/
 .scroll span {
-    /*描画位置*/
     position: absolute;
     left:60px;
     margin-top: -30px;
     margin-bottom: 30px;
-    /*テキストの形状*/
     color: #586b86;
     letter-spacing: 0.05em;
 }
 
-/* 丸の描写 */
 .scroll:before {
     content: "";
-    /*描画位置*/
     position: absolute;
     bottom: 20;
     left:76px;
     margin-top: -50px;
-    /*丸の形状*/
     width:10px;
     height:10px;
     border-radius: 50%;
     background:#000000;
-    /*丸の動き1.6秒かけて透過し、永遠にループ*/
     animation:
     circlemove 1.2s ease-in-out infinite,
     cirlemovehide 1.2s ease-out infinite;
 }
 
-/*下からの距離が変化して丸の全体が上から下に動く*/
 @keyframes circlemove{
     0% {
         bottom:55px;
@@ -145,10 +136,6 @@ header nav ul li a {
     }
 }
 
-
-
-
-/*上から下にかけて丸が透過→不透明→透過する*/
 @keyframes cirlemovehide{
     0% {
         opacity:0;
@@ -168,14 +155,11 @@ header nav ul li a {
     }
 }
 
-/* 線の描写 */
 .scroll:after{
     content:"";
-    /*描画位置*/
     position: absolute;
     bottom: 20;
     left:80px;
-    /*線の形状*/
     width:1.5px;
     height: 45px;
     background:#000000;
@@ -206,8 +190,8 @@ header nav ul li a {
 }
 
 input:checked + .tabItem {
-    color: #fff;                  /* タブの文字色：赤色 */
-    background-color: #98abbe;   /* タブの背景色：淡い黄色 */
+    color: #fff;
+    background-color: #98abbe;
     border-color: #98abbe;
 }
 
@@ -228,11 +212,11 @@ input:checked + .tabItem {
 .swiper-container {
     width: 100%;
 }
-/* 全体のスタイル */
+
 .swiper-wrapper {
 	width: 100%;
 }
-/* 全スライド共通スタイル */
+
 .swiper-slide {
     text-align: left;
     padding-bottom: 20px;
@@ -251,10 +235,10 @@ input:checked + .tabItem {
     align-items: center;
     justify-content: center;
     color: var(--swiper-navigation-color, var(--swiper-theme-color));
-    width: 48px; /* ボタンの幅 */
-    height: 48px; /* ボタンの高さ */
-    background-size: 48px 48px; /* 背景画像としてのサイズ（＝表示したい画像サイズ） */
-    margin-top: -24px; /* 縦中央配置用：ボタンの高さの半分のネガティブマージン（top:50%がすでに設定されている） */
+    width: 48px;
+    height: 48px;
+    background-size: 48px 48px;
+    margin-top: -24px;
 }
 
 .swiper-button-prev {
@@ -574,7 +558,7 @@ input:checked + .tabItem {
 .viewMore img {
     margin-top: 25px;
 }
-/* ページTOPに戻る */
+
 .pageTop{
     display: flex;
     flex-wrap: nowrap;
@@ -668,14 +652,17 @@ footer {
     color: #7f8285;
 }
 
-/* アニメーションの記述 */
-
 .fade {
     animation: fadeIn 1s ease 0s 1 normal;
 }
-@keyframes fadeIn { /*animation-nameで設定した値を書く*/
-    0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
-    100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 .fadeIn{
@@ -700,6 +687,7 @@ footer {
     transform: translateX(-20px);
     opacity: 0;
 }
+
 .fadeIn-left.active{
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
@@ -707,7 +695,6 @@ footer {
     transform: translateX(0);
     opacity: 1;
 }
-
 
 .fadeIn-right{
     -webkit-transition: all .5s linear;
@@ -719,6 +706,7 @@ footer {
     transform: translateX(20px);
     opacity: 0;
 }
+
 .fadeIn-right.active{
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
